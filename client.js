@@ -34,7 +34,8 @@ startBtn.onclick = async () => {
 async function start() {
   // Устанавливаем соединение к серверу сигнализации
  // ws = new WebSocket('ws://localhost:8080');
-    ws = new WebSocket('ws://85.28.47.165:8080');
+   // ws = new WebSocket('ws://85.28.47.165:8080');
+    ws = new WebSocket('wss://truruky.ru/ws');
   ws.onopen = () => {
     // Регистрируемся у сервера
     ws.send(JSON.stringify({ type: 'register', from: yourId }));
