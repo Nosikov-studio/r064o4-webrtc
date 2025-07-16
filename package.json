@@ -1,0 +1,24 @@
+{
+  "name": "r064o4-webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nosikov-studio/r064o4-webrtc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nosikov-studio/r064o4-webrtc/issues"
+  },
+  "homepage": "https://github.com/Nosikov-studio/r064o4-webrtc#readme",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
