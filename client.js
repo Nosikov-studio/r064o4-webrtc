@@ -128,7 +128,21 @@ async function handleCandidate(candidate) {
   }
 }
 
+// function sendSignal(type, payload) {
+//   const message = {
+//     type,
+//     from: yourId,
+//     to: partnerId,
+//     payload,
+//   };
+//   ws.send(JSON.stringify(message));
+//   log('Sent signaling message:', message);
+// }
 function sendSignal(type, payload) {
+  if (!ws || ws.readyState !== WebSocket.OPEN) {
+    console.error('WebSocket не открыт для отправки:', ws ? ws.readyState : ws);
+    return;
+  }
   const message = {
     type,
     from: yourId,
